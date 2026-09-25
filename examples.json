@@ -1,0 +1,80 @@
+[
+  {
+    "label": "Todas as respostas 1: 7 pontos (leves)",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "score": 7,
+      "level": "low"
+    },
+    "originalInput": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "2"
+    },
+    "expected": {
+      "score": 8,
+      "level": "mid"
+    },
+    "originalInput": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "2"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todas as respostas 3: 21 pontos (graves)",
+    "input": {
+      "esvaz": "3",
+      "freq": "3",
+      "inter": "3",
+      "urg": "3",
+      "jato": "3",
+      "esforco": "3",
+      "noct": "3"
+    },
+    "expected": {
+      "score": 21,
+      "level": "high"
+    },
+    "originalInput": {
+      "esvaz": "3",
+      "freq": "3",
+      "inter": "3",
+      "urg": "3",
+      "jato": "3",
+      "esforco": "3",
+      "noct": "3"
+    },
+    "expandedZeroOptions": []
+  }
+]

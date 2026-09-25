@@ -1,0 +1,325 @@
+{
+  "tool": {
+    "id": "ipss",
+    "title": "IPSS (Escore Internacional de Sintomas Prostáticos)",
+    "short": "Gravidade dos sintomas urinários na HPB",
+    "desc": "Calcule o IPSS: gravidade dos sintomas do trato urinário inferior no homem com hiperplasia prostática benigna, de leve (0 a 7) a grave (20 a 35).",
+    "lead": "Questionário de 7 perguntas sobre sintomas urinários no último mês. Classifica a gravidade dos sintomas do trato urinário inferior e acompanha a resposta ao tratamento da hiperplasia prostática benigna.",
+    "spec": [
+      "urologia",
+      "geriatria",
+      "medicina-de-familia-e-comunidade",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "esvaz",
+        "Esvaziamento incompleto: sensação de não esvaziar totalmente a bexiga",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma vez",
+            "1": "Menos de 1 vez em cada 5",
+            "2": "Menos da metade das vezes",
+            "3": "Cerca de metade das vezes",
+            "4": "Mais da metade das vezes",
+            "5": "Quase sempre"
+          }
+        }
+      ],
+      [
+        "freq",
+        "Frequência: precisou urinar de novo menos de 2 horas depois",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma vez",
+            "1": "Menos de 1 vez em cada 5",
+            "2": "Menos da metade das vezes",
+            "3": "Cerca de metade das vezes",
+            "4": "Mais da metade das vezes",
+            "5": "Quase sempre"
+          }
+        }
+      ],
+      [
+        "inter",
+        "Intermitência: o jato parou e recomeçou várias vezes",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma vez",
+            "1": "Menos de 1 vez em cada 5",
+            "2": "Menos da metade das vezes",
+            "3": "Cerca de metade das vezes",
+            "4": "Mais da metade das vezes",
+            "5": "Quase sempre"
+          }
+        }
+      ],
+      [
+        "urg",
+        "Urgência: dificuldade para segurar a urina",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma vez",
+            "1": "Menos de 1 vez em cada 5",
+            "2": "Menos da metade das vezes",
+            "3": "Cerca de metade das vezes",
+            "4": "Mais da metade das vezes",
+            "5": "Quase sempre"
+          }
+        }
+      ],
+      [
+        "jato",
+        "Jato fraco",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma vez",
+            "1": "Menos de 1 vez em cada 5",
+            "2": "Menos da metade das vezes",
+            "3": "Cerca de metade das vezes",
+            "4": "Mais da metade das vezes",
+            "5": "Quase sempre"
+          }
+        }
+      ],
+      [
+        "esforco",
+        "Esforço: precisou fazer força para começar a urinar",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma vez",
+            "1": "Menos de 1 vez em cada 5",
+            "2": "Menos da metade das vezes",
+            "3": "Cerca de metade das vezes",
+            "4": "Mais da metade das vezes",
+            "5": "Quase sempre"
+          }
+        }
+      ],
+      [
+        "noct",
+        "Noctúria: quantas vezes levantou à noite para urinar",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma",
+            "1": "1 vez",
+            "2": "2 vezes",
+            "3": "3 vezes",
+            "4": "4 vezes",
+            "5": "5 ou mais vezes"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "IPSS",
+      "unit": "de 35",
+      "bands": [
+        [
+          0,
+          "low",
+          "Sintomas leves (0 a 7)",
+          "Em geral, observação vigilante e orientação comportamental."
+        ],
+        [
+          8,
+          "mid",
+          "Sintomas moderados (8 a 19)",
+          "Considerar tratamento medicamentoso conforme o incômodo."
+        ],
+        [
+          20,
+          "high",
+          "Sintomas graves (20 a 35)",
+          "Avaliar tratamento medicamentoso combinado ou cirúrgico."
+        ]
+      ]
+    },
+    "formula": "<p>Sete perguntas sobre o <strong>último mês</strong>, cada uma de 0 a 5 pontos. Total de 0 a 35.</p><p>A 8ª pergunta (qualidade de vida, de 0 \"encantado\" a 6 \"péssimo\") é registrada à parte e não entra na soma.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Gravidade dos sintomas"
+      ],
+      [
+        "0 a 7",
+        "Leves"
+      ],
+      [
+        "8 a 19",
+        "Moderados"
+      ],
+      [
+        "20 a 35",
+        "Graves"
+      ]
+    ],
+    "tips": [
+      "O IPSS mede <strong>sintomas</strong>, não o tamanho da próstata nem a obstrução: os sintomas podem vir de bexiga hiperativa, poliúria noturna ou diabetes.",
+      "Separe os sintomas de armazenamento (frequência, urgência, noctúria) dos de esvaziamento (esvaziamento incompleto, intermitência, jato fraco, esforço): orientam a escolha do tratamento.",
+      "Noctúria isolada pede diário miccional: poliúria noturna (insuficiência cardíaca, apneia do sono, diuréticos) não melhora com remédio para próstata.",
+      "Uma queda de 3 pontos ou mais costuma ser percebida pelo paciente como melhora; use o mesmo questionário no seguimento.",
+      "Sintomas com hematúria, retenção, infecção de repetição ou toque retal suspeito pedem investigação, qualquer que seja o escore."
+    ],
+    "sources": [
+      [
+        "Barry MJ et al. The American Urological Association symptom index for benign prostatic hyperplasia. J Urol, 1992.",
+        "https://doi.org/10.1016/S0022-5347(17)36966-5"
+      ],
+      [
+        "Lerner LB et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline part I, initial work-up and medical management. J Urol, 2021.",
+        "https://doi.org/10.1097/JU.0000000000002183"
+      ]
+    ],
+    "cases": [
+      [
+        "Todas as respostas 1: 7 pontos (leves)",
+        {
+          "esvaz": "1",
+          "freq": "1",
+          "inter": "1",
+          "urg": "1",
+          "jato": "1",
+          "esforco": "1",
+          "noct": "1"
+        },
+        {
+          "score": 7,
+          "level": "low"
+        }
+      ],
+      [
+        "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        {
+          "esvaz": "1",
+          "freq": "1",
+          "inter": "1",
+          "urg": "1",
+          "jato": "1",
+          "esforco": "1",
+          "noct": "2"
+        },
+        {
+          "score": 8,
+          "level": "mid"
+        }
+      ],
+      [
+        "Todas as respostas 3: 21 pontos (graves)",
+        {
+          "esvaz": "3",
+          "freq": "3",
+          "inter": "3",
+          "urg": "3",
+          "jato": "3",
+          "esforco": "3",
+          "noct": "3"
+        },
+        {
+          "score": 21,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 35",
+      "label": "IPSS",
+      "fields": [
+        [
+          "esvaz",
+          "sel",
+          0
+        ],
+        [
+          "freq",
+          "sel",
+          0
+        ],
+        [
+          "inter",
+          "sel",
+          0
+        ],
+        [
+          "urg",
+          "sel",
+          0
+        ],
+        [
+          "jato",
+          "sel",
+          0
+        ],
+        [
+          "esforco",
+          "sel",
+          0
+        ],
+        [
+          "noct",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Sintomas leves (0 a 7)",
+          "Em geral, observação vigilante e orientação comportamental."
+        ],
+        [
+          8,
+          "mid",
+          "Sintomas moderados (8 a 19)",
+          "Considerar tratamento medicamentoso conforme o incômodo."
+        ],
+        [
+          20,
+          "high",
+          "Sintomas graves (20 a 35)",
+          "Avaliar tratamento medicamentoso combinado ou cirúrgico."
+        ]
+      ]
+    },
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
