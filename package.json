@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-ipss",
   "version": "0.1.0",
-  "description": "IPSS (Escore Internacional de Sintomas Prostáticos) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "IPSS (Escore Internacional de Sintomas Prostáticos) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
