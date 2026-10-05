@@ -1,0 +1,274 @@
+{
+  "id": "ipss",
+  "at": "2026-10-05T17:29:53.169Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/ipss/calculator.js",
+    "bytes": 6164,
+    "sha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+  },
+  "cases": [
+    {
+      "name": "Todas as respostas 1: 7 pontos (leves)",
+      "input": {
+        "esvaz": "1",
+        "freq": "1",
+        "inter": "1",
+        "urg": "1",
+        "jato": "1",
+        "esforco": "1",
+        "noct": "1"
+      },
+      "obtained": {
+        "id": "ipss",
+        "main": [
+          "7",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7",
+          "obtained": "7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 35",
+          "obtained": "de 35",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+      "input": {
+        "esvaz": "1",
+        "freq": "1",
+        "inter": "1",
+        "urg": "1",
+        "jato": "1",
+        "esforco": "1",
+        "noct": "2"
+      },
+      "obtained": {
+        "id": "ipss",
+        "main": [
+          "8",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 8,
+          "obtained": 8,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 8,
+          "obtained": 8,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "8",
+          "obtained": "8",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 35",
+          "obtained": "de 35",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Todas as respostas 3: 21 pontos (graves)",
+      "input": {
+        "esvaz": "3",
+        "freq": "3",
+        "inter": "3",
+        "urg": "3",
+        "jato": "3",
+        "esforco": "3",
+        "noct": "3"
+      },
+      "obtained": {
+        "id": "ipss",
+        "main": [
+          "21",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "raw": {
+          "score": 21
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 21,
+          "obtained": 21,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 21,
+          "obtained": 21,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "21",
+          "obtained": "21",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 35",
+          "obtained": "de 35",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 25,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

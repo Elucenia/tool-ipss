@@ -1,0 +1,388 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field esvaz",
+    "input": {
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "esvaz"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field esvaz",
+    "input": {
+      "esvaz": "",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "esvaz"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option esvaz",
+    "input": {
+      "esvaz": "__ELUCENIA_INVALID_OPTION__",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "esvaz"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field freq",
+    "input": {
+      "esvaz": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "freq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field freq",
+    "input": {
+      "esvaz": "1",
+      "freq": "",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "freq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option freq",
+    "input": {
+      "esvaz": "1",
+      "freq": "__ELUCENIA_INVALID_OPTION__",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "freq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field inter",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "inter"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field inter",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "inter"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option inter",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "__ELUCENIA_INVALID_OPTION__",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "inter"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field urg",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "urg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field urg",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "urg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option urg",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "__ELUCENIA_INVALID_OPTION__",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "urg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field jato",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "jato"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field jato",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "jato"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option jato",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "__ELUCENIA_INVALID_OPTION__",
+      "esforco": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "jato"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field esforco",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "esforco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field esforco",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "esforco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option esforco",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "__ELUCENIA_INVALID_OPTION__",
+      "noct": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "esforco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field noct",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "noct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field noct",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "noct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option noct",
+    "input": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "noct"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

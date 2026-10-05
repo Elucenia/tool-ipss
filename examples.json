@@ -1,6 +1,18 @@
 [
   {
-    "label": "Todas as respostas 1: 7 pontos (leves)",
+    "id": "ipss",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Todas as respostas 1: 7 pontos (leves)",
+    "originalInput": {
+      "esvaz": "1",
+      "freq": "1",
+      "inter": "1",
+      "urg": "1",
+      "jato": "1",
+      "esforco": "1",
+      "noct": "1"
+    },
     "input": {
       "esvaz": "1",
       "freq": "1",
@@ -14,6 +26,30 @@
       "score": 7,
       "level": "low"
     },
+    "recordedResult": {
+      "main": [
+        "7",
+        "de 35"
+      ],
+      "label": "IPSS",
+      "raw": {
+        "score": 7
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "ipss",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
     "originalInput": {
       "esvaz": "1",
       "freq": "1",
@@ -21,12 +57,8 @@
       "urg": "1",
       "jato": "1",
       "esforco": "1",
-      "noct": "1"
+      "noct": "2"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
     "input": {
       "esvaz": "1",
       "freq": "1",
@@ -40,19 +72,39 @@
       "score": 8,
       "level": "mid"
     },
-    "originalInput": {
-      "esvaz": "1",
-      "freq": "1",
-      "inter": "1",
-      "urg": "1",
-      "jato": "1",
-      "esforco": "1",
-      "noct": "2"
+    "recordedResult": {
+      "main": [
+        "8",
+        "de 35"
+      ],
+      "label": "IPSS",
+      "raw": {
+        "score": 8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todas as respostas 3: 21 pontos (graves)",
+    "id": "ipss",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Todas as respostas 3: 21 pontos (graves)",
+    "originalInput": {
+      "esvaz": "3",
+      "freq": "3",
+      "inter": "3",
+      "urg": "3",
+      "jato": "3",
+      "esforco": "3",
+      "noct": "3"
+    },
     "input": {
       "esvaz": "3",
       "freq": "3",
@@ -66,15 +118,23 @@
       "score": 21,
       "level": "high"
     },
-    "originalInput": {
-      "esvaz": "3",
-      "freq": "3",
-      "inter": "3",
-      "urg": "3",
-      "jato": "3",
-      "esforco": "3",
-      "noct": "3"
+    "recordedResult": {
+      "main": [
+        "21",
+        "de 35"
+      ],
+      "label": "IPSS",
+      "raw": {
+        "score": 21
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

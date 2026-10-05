@@ -5,13 +5,13 @@
     "short": "Gravidade dos sintomas urinários na HPB",
     "desc": "Calcule o IPSS: gravidade dos sintomas do trato urinário inferior no homem com hiperplasia prostática benigna, de leve (0 a 7) a grave (20 a 35).",
     "lead": "Questionário de 7 perguntas sobre sintomas urinários no último mês. Classifica a gravidade dos sintomas do trato urinário inferior e acompanha a resposta ao tratamento da hiperplasia prostática benigna.",
+    "kind": "Escore",
     "spec": [
       "urologia",
       "geriatria",
       "medicina-de-familia-e-comunidade",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "esvaz",
@@ -119,56 +119,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "IPSS",
-      "unit": "de 35",
-      "bands": [
-        [
-          0,
-          "low",
-          "Sintomas leves (0 a 7)",
-          "Em geral, observação vigilante e orientação comportamental."
-        ],
-        [
-          8,
-          "mid",
-          "Sintomas moderados (8 a 19)",
-          "Considerar tratamento medicamentoso conforme o incômodo."
-        ],
-        [
-          20,
-          "high",
-          "Sintomas graves (20 a 35)",
-          "Avaliar tratamento medicamentoso combinado ou cirúrgico."
-        ]
-      ]
-    },
     "formula": "<p>Sete perguntas sobre o <strong>último mês</strong>, cada uma de 0 a 5 pontos. Total de 0 a 35.</p><p>A 8ª pergunta (qualidade de vida, de 0 \"encantado\" a 6 \"péssimo\") é registrada à parte e não entra na soma.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Gravidade dos sintomas"
-      ],
-      [
-        "0 a 7",
-        "Leves"
-      ],
-      [
-        "8 a 19",
-        "Moderados"
-      ],
-      [
-        "20 a 35",
-        "Graves"
-      ]
-    ],
-    "tips": [
-      "O IPSS mede <strong>sintomas</strong>, não o tamanho da próstata nem a obstrução: os sintomas podem vir de bexiga hiperativa, poliúria noturna ou diabetes.",
-      "Separe os sintomas de armazenamento (frequência, urgência, noctúria) dos de esvaziamento (esvaziamento incompleto, intermitência, jato fraco, esforço): orientam a escolha do tratamento.",
-      "Noctúria isolada pede diário miccional: poliúria noturna (insuficiência cardíaca, apneia do sono, diuréticos) não melhora com remédio para próstata.",
-      "Uma queda de 3 pontos ou mais costuma ser percebida pelo paciente como melhora; use o mesmo questionário no seguimento.",
-      "Sintomas com hematúria, retenção, infecção de repetição ou toque retal suspeito pedem investigação, qualquer que seja o escore."
-    ],
     "sources": [
       [
         "Barry MJ et al. The American Urological Association symptom index for benign prostatic hyperplasia. J Urol, 1992.",
@@ -229,69 +180,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 35",
-      "label": "IPSS",
-      "fields": [
-        [
-          "esvaz",
-          "sel",
-          0
-        ],
-        [
-          "freq",
-          "sel",
-          0
-        ],
-        [
-          "inter",
-          "sel",
-          0
-        ],
-        [
-          "urg",
-          "sel",
-          0
-        ],
-        [
-          "jato",
-          "sel",
-          0
-        ],
-        [
-          "esforco",
-          "sel",
-          0
-        ],
-        [
-          "noct",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Sintomas leves (0 a 7)",
-          "Em geral, observação vigilante e orientação comportamental."
-        ],
-        [
-          8,
-          "mid",
-          "Sintomas moderados (8 a 19)",
-          "Considerar tratamento medicamentoso conforme o incômodo."
-        ],
-        [
-          20,
-          "high",
-          "Sintomas graves (20 a 35)",
-          "Avaliar tratamento medicamentoso combinado ou cirúrgico."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -300,17 +188,318 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:01:58.037Z",
+      "total": 72,
+      "passed": 72,
+      "evidencePath": "reports/review-20261003/four-additional-score-source-oracles-final23.json",
+      "evidenceSha256": "7cc224441c13fd989be61866ed070958061dee40c47c8ba632f3edbd6330f1c1",
+      "peerEvidencePath": "reports/review-20261003/independent-four-additional-score-source-oracles-final23.json",
+      "peerEvidenceSha256": "516e1b32ed4a2fd53ba8be2d26e9485ca027e6f185f3e2cd2873dcc3e3249fe7",
+      "scope": "Entered point sum only; wording, applicability, thresholds, diagnostic decisions, translations, licensing and overall release suitability are not approved.",
+      "source": {
+        "keys": [
+          "esvaz",
+          "freq",
+          "inter",
+          "urg",
+          "jato",
+          "esforco",
+          "noct"
+        ],
+        "options": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "booleans": [],
+        "exhaustive": false,
+        "url": "https://phenxtoolkit.org/protocols/view/101202?origin=browse",
+        "edition": "PhenX prostate symptoms protocol101202, released2017; Barry1992/AUA symptom index",
+        "locator": "Protocol table and About the I-PSS, seven symptom items0–5 and total0–35",
+        "access": "Primary institutional protocol table and score instructions read directly on2026-10-04. Original Barry1992 full text was not retrieved; no claim of original full protocol review. The separate quality-of-life eighth question is not in the sum.",
+        "rights": "PhenX explicitly lists its protocol freely available without use permission. It separately refers to paid translations. This does not approve our authored translations as licensed or professionally validated questionnaires."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "ipss",
+          "sha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+        },
+        {
+          "app": "dashboard",
+          "id": "ipss",
+          "sha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+        },
+        {
+          "app": "command-center",
+          "id": "ipss",
+          "sha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+        }
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "AUASI/Barry 1992, IPSS 7 itens 0–5, total 0–35; qualidadedevida 8ºitemseparado",
+    "implementationVersion": "ipss@native-2026-10-03+335195db0825",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1279218/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Sete perguntas sobre o último mês , cada uma de 0 a 5 pontos. Total de 0 a 35. A 8ª pergunta (qualidade de vida, de 0 \"encantado\" a 6 \"péssimo\") é registrada à parte e não entra na soma.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "esvaz",
+            "label": "Esvaziamento incompleto: sensação de não esvaziar totalmente a bexiga",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma vez",
+              "1": "Menos de 1 vez em cada 5",
+              "2": "Menos da metade das vezes",
+              "3": "Cerca de metade das vezes",
+              "4": "Mais da metade das vezes",
+              "5": "Quase sempre"
+            }
+          },
+          {
+            "key": "freq",
+            "label": "Frequência: precisou urinar de novo menos de 2 horas depois",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma vez",
+              "1": "Menos de 1 vez em cada 5",
+              "2": "Menos da metade das vezes",
+              "3": "Cerca de metade das vezes",
+              "4": "Mais da metade das vezes",
+              "5": "Quase sempre"
+            }
+          },
+          {
+            "key": "inter",
+            "label": "Intermitência: o jato parou e recomeçou várias vezes",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma vez",
+              "1": "Menos de 1 vez em cada 5",
+              "2": "Menos da metade das vezes",
+              "3": "Cerca de metade das vezes",
+              "4": "Mais da metade das vezes",
+              "5": "Quase sempre"
+            }
+          },
+          {
+            "key": "urg",
+            "label": "Urgência: dificuldade para segurar a urina",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma vez",
+              "1": "Menos de 1 vez em cada 5",
+              "2": "Menos da metade das vezes",
+              "3": "Cerca de metade das vezes",
+              "4": "Mais da metade das vezes",
+              "5": "Quase sempre"
+            }
+          },
+          {
+            "key": "jato",
+            "label": "Jato fraco",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma vez",
+              "1": "Menos de 1 vez em cada 5",
+              "2": "Menos da metade das vezes",
+              "3": "Cerca de metade das vezes",
+              "4": "Mais da metade das vezes",
+              "5": "Quase sempre"
+            }
+          },
+          {
+            "key": "esforco",
+            "label": "Esforço: precisou fazer força para começar a urinar",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma vez",
+              "1": "Menos de 1 vez em cada 5",
+              "2": "Menos da metade das vezes",
+              "3": "Cerca de metade das vezes",
+              "4": "Mais da metade das vezes",
+              "5": "Quase sempre"
+            }
+          },
+          {
+            "key": "noct",
+            "label": "Noctúria: quantas vezes levantou à noite para urinar",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma",
+              "1": "1 vez",
+              "2": "2 vezes",
+              "3": "3 vezes",
+              "4": "4 vezes",
+              "5": "5 ou mais vezes"
+            }
+          }
+        ],
+        "hash": "1a579011a2f250b8ff528c9b7f55308af2c8f1b02711004523e3e6a1162cc683"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Barry MJ et al. The American Urological Association symptom index for benign prostatic hyperplasia. J Urol, 1992.",
+          "url": "https://doi.org/10.1016/S0022-5347(17)36966-5",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The American Urological Association symptom index for benign prostatic hyperplasia. The Measurement Committee of the American Urological Association.",
+            "year": "1992",
+            "firstPublicationDate": "1992-11-01",
+            "doi": "10.1016/s0022-5347(17)36966-5",
+            "pmid": "1279218",
+            "journal": "The Journal of urology",
+            "authors": "Barry MJ, Fowler FJ, O'Leary MP, Bruskewitz RC, Holtgrewe HL, Mebust WK, Cockett AT."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1279218/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "dd5393b336a905f729866d093dfd6562b7e511f584f7dce3e6e8cb0334390cd6",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Lerner LB et al. Management of lower urinary tract symptoms attributed to benign prostatic hyperplasia: AUA guideline part I, initial work-up and medical management. J Urol, 2021.",
+          "url": "https://doi.org/10.1097/JU.0000000000002183",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia: AUA GUIDELINE PART I-Initial Work-up and Medical Management.",
+            "year": "2021",
+            "firstPublicationDate": "2021-08-13",
+            "doi": "10.1097/ju.0000000000002183",
+            "pmid": "34384237",
+            "journal": "The Journal of urology",
+            "authors": "Lerner LB, McVary KT, Barry MJ, Bixler BR, Dahm P, Das AK, Gandhi MC, Kaplan SA, Kohler TS, Martin L, Parsons JK, Roehrborn CG, Stoffel JT, Welliver C, Wilt TJ."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34384237/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "48c83d2cf13decdb0ce6b2d4318e2c620d854de0629365ed7a97c48208e38a43",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:01:58.037Z",
+        "total": 72,
+        "passed": 72,
+        "evidencePath": "reports/review-20261003/four-additional-score-source-oracles-final23.json",
+        "scope": "Entered point sum only; wording, applicability, thresholds, diagnostic decisions, translations, licensing and overall release suitability are not approved.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "04f54995970ea8d75b8fb1e58890f4aa93feb9dff75671097e34089537cd7a3f"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+    },
+    "limits": "O IPSS/AUA quantifica sintomas urinários e sua evolução, mas o total não estabelece que a causa seja hiperplasia prostática benigna. A validação original envolveu pessoas com HPB e controles. Redação, janela temporal, qualidade de vida e limites da versão linguística devem ser preservados e verificados separadamente.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.067Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra janela de um mês, redação oficial, cortes nem oitavo item qualidade de vida. Discriminação da coorte não prova causa de todo sintoma urinário."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/ipss/calculator.js",
+    "bytes": 6164,
+    "sha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "4a8a86dfb8b9cce0abcbf7e0f3cbca7239692a53a2e2493923c91ad85594a38f",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 72,
+      "sha256": "9cb828c7a142a04fc5c31511e1e6f650451d744cbd401a6fbe4b353bb9700dd8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
