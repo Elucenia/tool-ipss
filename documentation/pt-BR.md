@@ -132,3 +132,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Sintomas leves (0 a 7)
+
+Em geral, observação vigilante e orientação comportamental.
+
+
+### 2
+
+Sintomas moderados (8 a 19)
+
+Considerar tratamento medicamentoso conforme o incômodo.
+
+
+### 3
+
+Sintomas graves (20 a 35)
+
+Avaliar tratamento medicamentoso combinado ou cirúrgico.
+

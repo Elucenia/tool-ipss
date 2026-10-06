@@ -132,3 +132,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Mild symptoms (0 to 7)
+
+In general, watchful waiting and behavioral guidance.
+
+
+### 2
+
+Moderate symptoms (8 to 19)
+
+Consider drug treatment according to the degree of bother.
+
+
+### 3
+
+Severe symptoms (20 to 35)
+
+Evaluate combined drug treatment or surgery.
+

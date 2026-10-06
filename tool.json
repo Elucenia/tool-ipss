@@ -296,7 +296,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "AUASI/Barry 1992, IPSS 7 itens 0–5, total 0–35; qualidadedevida 8ºitemseparado",
-    "implementationVersion": "ipss@native-2026-10-03+335195db0825",
+    "implementationVersion": "ipss@native-2026-10-05+159ae99970f5",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1279218/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -469,7 +469,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+      "implementationHash": "159ae99970f59d9201f71d241332ea0e207dc856d0df1310b60fcef90c8d7079",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "ipss@native-2026-10-03+335195db0825",
+          "previousImplementationHash": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091",
+          "implementationHash": "159ae99970f59d9201f71d241332ea0e207dc856d0df1310b60fcef90c8d7079",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "1a579011a2f250b8ff528c9b7f55308af2c8f1b02711004523e3e6a1162cc683",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O IPSS/AUA quantifica sintomas urinários e sua evolução, mas o total não estabelece que a causa seja hiperplasia prostática benigna. A validação original envolveu pessoas com HPB e controles. Redação, janela temporal, qualidade de vida e limites da versão linguística devem ser preservados e verificados separadamente.",
     "sourceLimitEvidence": {
@@ -488,15 +516,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/ipss/calculator.js",
-    "bytes": 6164,
-    "sha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091"
+    "bytes": 6369,
+    "sha256": "159ae99970f59d9201f71d241332ea0e207dc856d0df1310b60fcef90c8d7079"
   },
-  "sourceToolSha256": "4a8a86dfb8b9cce0abcbf7e0f3cbca7239692a53a2e2493923c91ad85594a38f",
+  "sourceToolSha256": "5049f9dac9bb9d4236e970bb0b0afb18a7e0a1a990a189bd77f2acf8c990c74c",
   "omittedFullReferenceBanks": [
     {
       "rows": 72,
       "sha256": "9cb828c7a142a04fc5c31511e1e6f650451d744cbd401a6fbe4b353bb9700dd8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

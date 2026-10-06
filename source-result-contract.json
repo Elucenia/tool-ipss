@@ -1,0 +1,181 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "ipss",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "45a2d0c7dcd7be016eaf43913aff33731ba7db53",
+    "oldEngineSha256": "335195db08252807218d97d6ae5a5968ca2f9ac4aeaf17b802c79acce4d02091",
+    "currentEngineSha256": "159ae99970f59d9201f71d241332ea0e207dc856d0df1310b60fcef90c8d7079"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Todas as respostas 1: 7 pontos (leves)",
+      "input": {
+        "esvaz": "1",
+        "freq": "1",
+        "inter": "1",
+        "urg": "1",
+        "jato": "1",
+        "esforco": "1",
+        "noct": "1"
+      },
+      "publicOutput": {
+        "id": "ipss",
+        "main": [
+          "7",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "level": "low",
+        "verdict": "Sintomas leves (0 a 7)",
+        "note": "Em geral, observação vigilante e orientação comportamental.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+      "input": {
+        "esvaz": "1",
+        "freq": "1",
+        "inter": "1",
+        "urg": "1",
+        "jato": "1",
+        "esforco": "1",
+        "noct": "2"
+      },
+      "publicOutput": {
+        "id": "ipss",
+        "main": [
+          "8",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 8,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "level": "mid",
+        "verdict": "Sintomas moderados (8 a 19)",
+        "note": "Considerar tratamento medicamentoso conforme o incômodo.",
+        "raw": {
+          "score": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Todas as respostas 3: 21 pontos (graves)",
+      "input": {
+        "esvaz": "3",
+        "freq": "3",
+        "inter": "3",
+        "urg": "3",
+        "jato": "3",
+        "esforco": "3",
+        "noct": "3"
+      },
+      "publicOutput": {
+        "id": "ipss",
+        "main": [
+          "21",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "raw": {
+          "score": 21
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 21,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "21",
+          "de 35"
+        ],
+        "label": "IPSS",
+        "level": "high",
+        "verdict": "Sintomas graves (20 a 35)",
+        "note": "Avaliar tratamento medicamentoso combinado ou cirúrgico.",
+        "raw": {
+          "score": 21
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

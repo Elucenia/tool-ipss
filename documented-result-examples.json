@@ -1,0 +1,537 @@
+{
+  "id": "ipss",
+  "implementationVersion": "ipss@native-2026-10-05+159ae99970f5",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sintomas leves (0 a 7)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Em geral, observação vigilante e orientação comportamental.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sintomas moderados (8 a 19)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considerar tratamento medicamentoso conforme o incômodo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sintomas graves (20 a 35)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avaliar tratamento medicamentoso combinado ou cirúrgico.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild symptoms (0 to 7)",
+            "locale": "en",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "In general, watchful waiting and behavioral guidance.",
+            "locale": "en",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate symptoms (8 to 19)",
+            "locale": "en",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "Consider drug treatment according to the degree of bother.",
+            "locale": "en",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Severe symptoms (20 to 35)",
+            "locale": "en",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "Evaluate combined drug treatment or surgery.",
+            "locale": "en",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Síntomas leves (0 a 7)",
+            "locale": "es",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "En general, observación vigilante y orientación conductual.",
+            "locale": "es",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Síntomas moderados (8 a 19)",
+            "locale": "es",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "Considerar tratamiento farmacológico según la molestia.",
+            "locale": "es",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Síntomas graves (20 a 35)",
+            "locale": "es",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "Evaluar tratamiento farmacológico combinado o quirúrgico.",
+            "locale": "es",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Symptômes légers (0 à 7)",
+            "locale": "fr",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "En général, surveillance attentive et conseils comportementaux.",
+            "locale": "fr",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Symptômes modérés (8 à 19)",
+            "locale": "fr",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "Envisager un traitement médicamenteux selon la gêne.",
+            "locale": "fr",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Symptômes sévères (20 à 35)",
+            "locale": "fr",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "Évaluer un traitement médicamenteux combiné ou chirurgical.",
+            "locale": "fr",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Symptome (0 bis 7)",
+            "locale": "de",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "Im Allgemeinen abwartendes Beobachten und Verhaltensempfehlungen.",
+            "locale": "de",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßige Symptome (8 bis 19)",
+            "locale": "de",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "Eine medikamentöse Behandlung je nach Beschwerdegrad erwägen.",
+            "locale": "de",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Schwere Symptome (20 bis 35)",
+            "locale": "de",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "Kombinierte medikamentöse oder chirurgische Behandlung erwägen.",
+            "locale": "de",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sintomi lievi (0 a 7)",
+            "locale": "it",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "In generale, sorveglianza attenta e consigli comportamentali.",
+            "locale": "it",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sintomi moderati (8 a 19)",
+            "locale": "it",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "Considerare un trattamento farmacologico in base al disturbo.",
+            "locale": "it",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sintomi gravi (20 a 35)",
+            "locale": "it",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "Valutare un trattamento farmacologico combinato o chirurgico.",
+            "locale": "it",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أعراض خفيفة (0 إلى 7)",
+            "locale": "ar",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "بشكل عام، المراقبة اليقظة والإرشاد السلوكي.",
+            "locale": "ar",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أعراض متوسطة (8 إلى 19)",
+            "locale": "ar",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "يُنظر في العلاج الدوائي حسب مدى الإزعاج.",
+            "locale": "ar",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "أعراض شديدة (20 إلى 35)",
+            "locale": "ar",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "تقييم العلاج الدوائي المركب أو الجراحي.",
+            "locale": "ar",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度症状（0 到 7）",
+            "locale": "zh",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "一般而言，密切观察和行为指导。",
+            "locale": "zh",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度症状（8 到 19）",
+            "locale": "zh",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "根据困扰程度考虑药物治疗。",
+            "locale": "zh",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度症状（20 到 35）",
+            "locale": "zh",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "评估联合药物治疗或手术治疗。",
+            "locale": "zh",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度症状（0から7）",
+            "locale": "ja",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "一般に、経過観察と行動指導。",
+            "locale": "ja",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度症状（8から19）",
+            "locale": "ja",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "苦痛の程度に応じて薬物治療を検討する。",
+            "locale": "ja",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度症状（20から35）",
+            "locale": "ja",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "併用薬物治療または外科的治療を評価する。",
+            "locale": "ja",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Todas as respostas 1: 7 pontos (leves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्के लक्षण (0 से 7)",
+            "locale": "hi",
+            "template": "documented-authored-745fd25ddecd5bf0fe2a"
+          },
+          "note": {
+            "text": "सामान्यतः सतर्क प्रतीक्षा और व्यवहारिक मार्गदर्शन।",
+            "locale": "hi",
+            "template": "documented-authored-364beaad74c3b7831d73"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "7 pontos + 1 na noctúria: 8 pontos (moderados)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम लक्षण (8 से 19)",
+            "locale": "hi",
+            "template": "documented-authored-e468cdac5a85aa36ff8f"
+          },
+          "note": {
+            "text": "असुविधा के अनुसार औषधीय उपचार पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-f58a929e89c97fa24a68"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas 3: 21 pontos (graves)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर लक्षण (20 से 35)",
+            "locale": "hi",
+            "template": "documented-authored-05841104d6dff997aa91"
+          },
+          "note": {
+            "text": "संयुक्त औषधीय उपचार या शल्य चिकित्सा पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-12f8978d30ba42e1e7ee"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
